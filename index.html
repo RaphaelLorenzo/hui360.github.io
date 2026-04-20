@@ -85,7 +85,7 @@
           <h1 class="title is-1 publication-title">HUI360: A dataset and baselines for Human Robot Interaction Anticipation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://github.com/raphlorlou">Raphael Lorenzo-Louis</a><sup>1</sup>,</span>
+              <a href="https://github.com/raphlorlou">Raphael Lorenzo-Louis</a><sup>1,2</sup>,</span>
             <span class="author-block">
               <a href="https://fabioamadio.com">Fabio Amadio</a><sup>2</sup>,</span>
             <span class="author-block">
@@ -164,11 +164,11 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+        <source src="./static/videos/presvideo.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">HUI360</span> is a dataset of 360° videos of human-robot interaction.
+        <span class="dnerf">HUI360</span> is a dataset of 360° videos of human-robot interaction from the robot's egocentric viewpoint.
       </h2>
     </div>
   </div>
@@ -281,28 +281,41 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
+
+      <!-- Dataset overview. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Dataset overview</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            Main dataset statistics.
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/presvideo.mp4"
-                    type="video/mp4">
-          </video>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/concept.jpg"
+                 alt="Concept."/>
+            <p class="is-bold">Concept.</p>
+          </div>
         </div>
       </div>
-      <!--/ Visual Effects. -->
+      <!--/ Dataset overview. -->
 
+      <!-- Dataset overview. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Dataset access</h2>
+          <p>
+            How to gain access to the dataset.
+          </p>
+        </div>
+      </div>
+      <!--/ Dataset overview. -->
 
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
+        <h2 class="title is-3">Automatic annotation pipeline</h2>
+        <p>
+          We also provide the pipeline to automatically annotate 360° videos of human-robot interaction from the robot's egocentric viewpoint. You can run it with videos from cameras like the Insta360 attached to a robot or a person.
+        </p>
         <!-- Interpolating. -->
         <!-- <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
@@ -389,6 +402,39 @@
       </div>
     </div> -->
     <!--/ Concurrent Work. -->
+
+
+    <!-- Recordings overview. -->
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">HUI360 Recordings with Shelfy</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recordings with Shelfy, the robot used to collect the dataset.
+          </p>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <img src="./static/images/sensorizedshelfy.png"
+                alt="Sensorized Shelfy."/>
+          <p class="is-bold">Sensorized Shelfy.</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Recordings with Shelfy overview. -->
+
+
+    <!-- SSUP-HRI overview. -->
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">SSUP-HRI</h2>
+        <div class="content has-text-justified">
+          <p>
+            Mini paragraph on SSUP-HRI and how to get it with link to their website. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ SSUP-HRI overview. -->
 
   </div>
 </section>
