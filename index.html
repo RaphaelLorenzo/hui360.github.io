@@ -60,15 +60,15 @@
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          Related projection
+          Related links
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/raphlorlou/First">
-            First
+          <a class="navbar-item" href="https://team.inria.fr/hucebot/team/">
+            Hucebot Team
           </a>
-          <a class="navbar-item" href="https://github.com/raphlorlou/Second">
+          <!-- <a class="navbar-item" href="https://github.com/raphlorlou/Second">
             Second
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -85,14 +85,14 @@
           <h1 class="title is-1 publication-title">HUI360: A dataset and baselines for Human Robot Interaction Anticipation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://github.com/raphlorlou">Raphael Lorenzo-Louis</a><sup>1,2</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=L8L_OVUAAAAJ">Raphael Lorenzo-Louis</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://fabioamadio.com">Fabio Amadio</a><sup>2</sup>,</span>
+              <a href="https://www.linkedin.com/in/fabio-amadio-024450187/">Fabio Amadio</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="http://bertrandluvison.com">Bertrand Luvison</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=eunSkCQAAAAJ">Bertrand Luvison</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://serenaivaldi.com">Serena Ivaldi</a><sup>2</sup>,
+              <a href="https://members.loria.fr/SIvaldi/">Serena Ivaldi</a><sup>2</sup>,
             </span>
           </div>
 
@@ -105,7 +105,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/TBD"
+                <a href="https://hal.science/view/index/docid/5609928"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -154,7 +154,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/raphlorlou/HUI360"
+                <a href="https://huggingface.co/datasets/rlorlou/HUI360"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-database"></i>
@@ -292,15 +292,55 @@
       <!-- Dataset overview. -->
       <div class="column is-four-fifths">
         <h2 class="title is-3">Dataset overview</h2>
-        <p>
-          Main dataset statistics.
-        </p>
         <img src="./static/images/concept.jpg"
               alt="Concept."/>
-        <p class="is-bold">Concept.</p>
-      </div>
-      <!--/ Dataset overview. -->
-
+        <div class="table-container" style="max-width: 820px; margin: 0 auto;">
+          <table class="table is-fullwidth is-striped">
+            <thead>
+              <tr>
+                <th style="width: 42%; text-align: left;">Metric</th>
+                <th style="text-align: left;">HUI360 – Shelfy recordings<br><span class="is-size-7">(without SSUP-HRI)</span></th>
+                <th style="text-align: left;">HUI360 – from SSUP-Data</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: left;">Recording duration</td>
+                <td><strong>71h</strong></td>
+                <td><strong>26h</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Recording duration (after filtering)</td>
+                <td><strong>11h</strong></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Individual tracks</td>
+                <td><strong>4310</strong></td>
+                <td><strong>28000</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Interactions with the robot</td>
+                <td><strong>375</strong></td>
+                <td><strong>419</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Images</td>
+                <td><strong>621,000</strong></td>
+                <td><strong>1.4M</strong></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Detections</td>
+                <td><strong>&gt; 1M</strong></td>
+                <td><strong>6M</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      <!--/ Slider between modalities (to add later). -->
+      <img src="./static/images/base_blurred.jpg"
+      alt="slider."/>
     </div>
   </div>
 </section>
