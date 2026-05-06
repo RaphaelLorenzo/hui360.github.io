@@ -350,10 +350,48 @@
       <!-- Processed data. -->
       <div class="column is-four-fifths">
         <h2 class="title is-3">Processed data</h2>
-        <!--/ Slider between modalities (to add later). -->
-        <p>
-          <img src="./static/images/base_blurred.jpg" alt="slider."/>
-        </p>
+        <div class="hui-compare" data-compare-multi>
+          <div class="hui-compare__stage">
+            <video class="hui-compare__video hui-compare__video--base" muted loop playsinline preload="metadata">
+              <source src="./static/videos/cropped_half_base.mp4" type="video/mp4">
+            </video>
+            <video class="hui-compare__video hui-compare__video--vitpose" muted loop playsinline preload="metadata">
+              <source src="./static/videos/cropped_half_vitpose.mp4" type="video/mp4">
+            </video>
+            <video class="hui-compare__video hui-compare__video--sapiens" muted loop playsinline preload="metadata">
+              <source src="./static/videos/cropped_half_sapiens.mp4" type="video/mp4">
+            </video>
+            <video class="hui-compare__video hui-compare__video--masks" muted loop playsinline preload="metadata">
+              <source src="./static/videos/cropped_half_masks.mp4" type="video/mp4">
+            </video>
+            <div class="hui-compare__handle hui-compare__handle--1" aria-hidden="true" data-handle="1">
+              <div class="hui-compare__handle-grip"></div>
+            </div>
+            <div class="hui-compare__handle hui-compare__handle--2" aria-hidden="true" data-handle="2">
+              <div class="hui-compare__handle-grip"></div>
+            </div>
+            <div class="hui-compare__handle hui-compare__handle--3" aria-hidden="true" data-handle="3">
+              <div class="hui-compare__handle-grip"></div>
+            </div>
+          </div>
+          <div class="hui-compare__controls">
+            <div class="hui-compare__labels">
+              <span>Base</span>
+              <span>ViTPose</span>
+              <span>Sapiens</span>
+              <span>Masks</span>
+            </div>
+            <input class="slider is-fullwidth is-large is-circle hui-compare__range hui-compare__range--sr"
+                   type="range" min="0" max="100" value="25" step="0.1"
+                   aria-label="Boundary 1">
+            <input class="slider is-fullwidth is-large is-circle hui-compare__range hui-compare__range--sr"
+                   type="range" min="0" max="100" value="50" step="0.1"
+                   aria-label="Boundary 2">
+            <input class="slider is-fullwidth is-large is-circle hui-compare__range hui-compare__range--sr"
+                   type="range" min="0" max="100" value="75" step="0.1"
+                   aria-label="Boundary 3">
+          </div>
+        </div>
       </div>
     </div>
   </div>

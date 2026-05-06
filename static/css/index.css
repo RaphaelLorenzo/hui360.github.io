@@ -155,3 +155,129 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* Video compare slider (base vs annotated). */
+.hui-compare {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.hui-compare__stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.hui-compare__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hui-compare__video--top {
+  clip-path: inset(0 50% 0 0);
+  will-change: clip-path;
+}
+
+.hui-compare__video--vitpose,
+.hui-compare__video--sapiens,
+.hui-compare__video--masks {
+  will-change: clip-path;
+}
+
+.hui-compare__handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 44px; /* hit target */
+  transform: translateX(-50%);
+  cursor: ew-resize;
+  touch-action: none;
+  z-index: 5;
+}
+
+.hui-compare__handle--1 { z-index: 6; }
+.hui-compare__handle--2 { z-index: 7; }
+.hui-compare__handle--3 { z-index: 8; }
+
+.hui-compare__handle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.hui-compare__handle-grip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.hui-compare__handle-grip::before,
+.hui-compare__handle-grip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  transform: translateY(-50%);
+  opacity: 0.9;
+}
+
+.hui-compare__handle-grip::before {
+  left: 9px;
+  border-right: 7px solid rgba(0, 0, 0, 0.55);
+}
+.hui-compare__handle-grip::after {
+  right: 9px;
+  border-left: 7px solid rgba(0, 0, 0, 0.55);
+}
+
+.hui-compare__controls {
+  margin-top: 0.75rem;
+}
+
+.hui-compare__labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  margin-bottom: 0.35rem;
+}
+
+.hui-compare__range {
+  touch-action: pan-x;
+}
+
+.hui-compare__range--sr {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
