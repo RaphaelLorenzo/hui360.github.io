@@ -298,9 +298,9 @@
           <table class="table is-fullwidth is-striped">
             <thead>
               <tr>
-                <th style="width: 42%; text-align: left;">Metric</th>
-                <th style="text-align: left;">HUI360<br><span class="is-size-7">(Our Recordings - Indoor w/ Shelfy)</span></th>
-                <th style="text-align: left;">HUI360<br><span class="is-size-7">(SSUP-HRI Recordings - Outdoor w/ Trashcan)</span></th>
+                <th style="width: 42%; text-align: center;"><br><span class="is-size-7">(Recordings split)</span></th>
+                <th style="text-align: center;">HUI360<br><span class="is-size-7">(Ours - Indoor w/ Shelfy)</span></th>
+                <th style="text-align: center;">HUI360<br><span class="is-size-7">(SSUP-HRI - Outdoor w/ Trashcan)</span></th>
               </tr>
             </thead>
             <tbody>
@@ -337,6 +337,19 @@
             </tbody>
           </table>
         </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <!-- Processed data. -->
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Processed data</h2>
         <!--/ Slider between modalities (to add later). -->
         <p>
           <img src="./static/images/base_blurred.jpg" alt="slider."/>
@@ -345,19 +358,44 @@
     </div>
   </div>
 </section>
-
+  
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <!-- Dataset overview. -->
+      <!-- Dataset access. -->
       <div class="column is-four-fifths">
         <h2 class="title is-3">Dataset access</h2>
         <p>
-          How to gain access to the dataset.
+          Visit <a href="https://huggingface.co/datasets/rlorlou/HUI360" class="external-link">Hugging Face</a> to access the dataset with skeletons. 
+          <br>
+          Full dataset will be made available under conditions to be specified (GDPR and ethics approval ongoing).
+          <!-- To access the dataset with images please return the User Agreement and wait to be approved on the repository. -->
+          <!-- Make sure to submit the user agreement with the same email address as your Hugging Face account. -->
+          <!-- Full dataset is only available for research purposes, to researchers of approved institutions, and provided that users agree to the terms of use (GDPR compliance). -->
+          <br>
+          <br>
         </p>
+        <div class="publication-links" style="justify-content: center;">
+          <span class="link-block">
+            <a href="https://huggingface.co/datasets/rlorlou/HUI360"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fas fa-database"></i>
+              </span>
+              <span>HUI360</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://huggingface.co/datasets/rlorlou/HUI360-Videos"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fas fa-database"></i>
+              </span>
+              <span>HUI360-Videos</span>
+            </a>
+          </span>
+        </div>
       </div>
-      <!--/ Dataset overview. -->
-      
     </div>
   </div>
 </section>
@@ -370,7 +408,20 @@
         <h2 class="title is-3">Automatic annotation pipeline</h2>
         <p>
           We also provide the pipeline to automatically annotate 360° videos of human-robot interaction from the robot's egocentric viewpoint. You can run it with videos from cameras like the Insta360 attached to a robot or a person.
+          <br>
+          <br>
         </p>
+        <div class="publication-links" style="justify-content: center;">
+          <span class="link-block">
+            <a href="https://github.com/RaphaelLorenzo/Interact360/"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+              </span>
+              <span>Interact360</span>
+            </a>
+          </span>
+        </div>
       </div>
       <!--/ Automatic annotation pipeline. -->
       
@@ -385,11 +436,15 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">HUI360 Recordings with Shelfy</h2>
         <p>
-          Recordings with Shelfy, the robot used to collect the dataset.
+          We recorded 71h of multimodal data and kept 11h of recordings with passerbys. Main data available are processed from 360° equirectangular videos. 
+          <br>
+          <i>If you are interested in other modalities please contact us (not available for all sessions).</i>
+          <br>
+          <br>
         </p>
         <img src="./static/images/sensorizedshelfy.png"
               alt="Sensorized Shelfy."/>
-        <p class="is-bold">Sensorized Shelfy.</p>
+        <p class="is-bold">Sensorized Shelfy robot.</p>
       </div>
       <!--/ HUI360 Recordings with Shelfy. -->
     </div>
