@@ -406,18 +406,54 @@
       <!-- Dataset access. -->
       <div class="column is-four-fifths">
         <h2 class="title is-3">Dataset access</h2>
-        <p>
-          You can access the <a href="https://huggingface.co/datasets/rlorlou/HUI360" class="external-link">HUI360 (Skeletons)</a> dataset on Hugging Face. 
-          <br>
-          To access the full dataset please visit <a href="https://huggingface.co/datasets/rlorlou/HUI360-Videos" class="external-link">HUI360-Videos</a> and request access with an institutional email, then a DTA will be sent to you for approval. 
-          Access to the unanonymized videos is reserved for researchers of approved institutions and provided that users agree to the terms of use (including GDPR compliance).
-          <!-- Full dataset will be made available under conditions to be specified (GDPR and ethics approval ongoing). -->
-          <!-- To access the dataset with images please return the User Agreement and wait to be approved on the repository. -->
-          <!-- Make sure to submit the user agreement with the same email address as your Hugging Face account. -->
-          <!-- Full dataset is only available for research purposes, to researchers of approved institutions, and provided that users agree to the terms of use (GDPR compliance). -->
-          <br>
-          <br>
-        </p>
+        <div class="content has-text-justified">
+          <p>
+            You can freely access the processed annotations (skeletons, keypoints, masks, etc.) on
+            <a href="https://huggingface.co/datasets/rlorlou/HUI360" class="external-link">HUI360</a>.
+          </p>
+          <p>
+            Access to the <strong>raw 360° videos from our Shelfy recordings</strong> requires a Data Transfer Agreement (DTA).
+            These DTAs cover our HUI360 recordings only — <strong>not</strong> the SSUP-HRI videos, which are subject to their own agreements
+            (see the <a href="#ssup-hri">SSUP-HRI</a> section).
+            Access is reserved for researchers at academic institutions, for research purposes only, and subject to GDPR compliance.
+          </p>
+          <p>To request access to the raw videos:</p>
+          <ol>
+            <li>
+              Download and fill the appropriate DTA for your country of affiliation:
+              <ul>
+                <li>
+                  <a href="./static/documents/Formulaire%20DTA%20HUI%20DATASET%20-%20CEE%20et%20pays%20ad%C3%A9quats.pdf"
+                     download>
+                    DTA — EEA and adequate countries
+                  </a>
+                </li>
+                <li>
+                  <a href="./static/documents/Formulaire%20DTA%20HUI%20DATASET%20-%20hors%20CEE.pdf"
+                     download>
+                    DTA — outside the EEA / non-adequate countries
+                  </a>
+                </li>
+              </ul>
+              <p class="is-size-7" style="margin-top: 0.5rem;">
+                <em>Note:</em> As of October&nbsp;16,&nbsp;2023, institutes located in the following territories
+                may use the EEA / adequate-countries form: countries of the European Union,
+                Iceland, Liechtenstein, Norway, Andorra, Argentina, Canada, Faroe Islands, Guernsey,
+                Israel, Isle of Man, Japan, Jersey, New Zealand, Switzerland, Uruguay, South Korea,
+                and the United Kingdom. All other affiliations should use the outside-EEA form.
+              </p>
+            </li>
+            <li>Sign it using your <strong>academic / institutional email address</strong>.</li>
+            <li>Send the completed form to <a href="mailto:huidataset@inria.fr">huidataset@inria.fr</a>.</li>
+            <li>Wait for approval from our legal team.</li>
+            <li>
+              In the meantime, register on Hugging Face with the <strong>same academic email</strong> and request access to
+              <a href="https://huggingface.co/datasets/rlorlou/HUI360-Videos" class="external-link">HUI360-Videos</a>.
+              Access will be granted once the DTA is approved.
+            </li>
+          </ol>
+        </div>
+        <br>
         <div class="publication-links" style="justify-content: center;">
           <span class="link-block">
             <a href="https://huggingface.co/datasets/rlorlou/HUI360"
@@ -435,6 +471,26 @@
                   <i class="fas fa-database"></i>
               </span>
               <span>HUI360-Videos</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="./static/documents/Formulaire%20DTA%20HUI%20DATASET%20-%20CEE%20et%20pays%20ad%C3%A9quats.pdf"
+               class="external-link button is-normal is-rounded is-dark"
+               download>
+              <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>DTA (EEA)</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="./static/documents/Formulaire%20DTA%20HUI%20DATASET%20-%20hors%20CEE.pdf"
+               class="external-link button is-normal is-rounded is-dark"
+               download>
+              <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>DTA (outside EEA)</span>
             </a>
           </span>
         </div>
@@ -497,7 +553,7 @@
 </section>
 
 
-<section class="section">
+<section class="section" id="ssup-hri">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <!-- SSUP-HRI overview. -->
@@ -518,12 +574,20 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{TBD,
-  author    = {Raphael Lorenzo-Louis and Fabio Amadio and Bertrand Luvison and Serena Ivaldi},
-  title     = {HUI360: A dataset and baselines for Human Robot Interaction Anticipation},
-  journal   = {TBD},
-  year      = {2026},
-}</code></pre>
+    <pre><code>@inproceedings{lorenzolouis:hal-05609928,
+      TITLE = {{HUI360 : A 360{\textdegree} Egocentric Dataset and Baselines for Human-Robot Interaction Anticipation}},
+      AUTHOR = {Lorenzo-Louis, Raphael and Amadio, Fabio and Luvison, Bertrand and Ivaldi, Serena},
+      URL = {https://hal.science/hal-05609928},
+      BOOKTITLE = {{FG 2026 - IEEE International Conference on Automatic Face and Gesture Recognition}},
+      ADDRESS = {Kyoto, Japan},
+      ORGANIZATION = {{IEEE Biometrics}},
+      YEAR = {2026},
+      MONTH = May,
+      KEYWORDS = {Human robot Interaction ; Computer vision ; Robotics ; AI ; Vision},
+      PDF = {https://hal.science/hal-05609928v1/file/FG_2026_AuthorVersion_InclSupp_compressed.pdf},
+      HAL_ID = {hal-05609928},
+      HAL_VERSION = {v1},
+    }</code></pre>
   </div>
 </section>
 
